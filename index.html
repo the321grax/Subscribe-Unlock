@@ -7,18 +7,30 @@
       margin: 0;
       font-family: sans-serif;
       color: white;
-      text-align: center;
-      padding: 50px;
-https://raw.githubusercontent.com/the321grax/Subscribe-Unlock/main/assets/0001.png
+      background-image: url('https://raw.githubusercontent.com/the321grax/Subscribe-Unlock/main/assets/0001.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00ccff;
+    }
+
     h2 {
       margin-bottom: 30px;
       text-shadow: 0 0 10px #000;
     }
+
     #downloadBtn {
       padding: 12px 24px;
       font-size: 16px;
@@ -35,21 +47,23 @@ https://raw.githubusercontent.com/the321grax/Subscribe-Unlock/main/assets/0001.p
 </head>
 <body>
 
-  <h2>💖 Subscribe to unlock the download</h2>
+  <div class="container">
+    <h2>💖 Subscribe to unlock the download</h2>
 
-  <!-- YouTube Subscribe Button -->
-  <script src="https://apis.google.com/js/platform.js"></script>
-  <div class="g-ytsubscribe"
-       data-channelid="UCIIPOzAODPQ2KTE7z1LhjSA"
-       data-layout="default"
-       data-theme="dark"
-       data-count="default">
+    <!-- YouTube Subscribe Button -->
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <div class="g-ytsubscribe"
+         data-channelid="UCIIPOzAODPQ2KTE7z1LhjSA"
+         data-layout="default"
+         data-theme="dark"
+         data-count="default">
+    </div>
+
+    <!-- Download Button -->
+    <button id="downloadBtn" onclick="window.location.href='https://hyper-cryptical.itch.io/swirling-blue-pink-ultrawide-hi-res-looping-wallpaper'">
+      Download Wallpaper
+    </button>
   </div>
-
-  <!-- Download Button -->
-  <button id="downloadBtn" onclick="window.location.href='https://hyper-cryptical.itch.io/swirling-blue-pink-ultrawide-hi-res-looping-wallpaper'">
-    Download Wallpaper
-  </button>
 
   <script>
     setTimeout(() => {
