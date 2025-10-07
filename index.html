@@ -22,12 +22,18 @@
       align-items: center;
     }
 
+    @keyframes pulse {
+      0%   { box-shadow: 0 0 10px #00ccff; }
+      50%  { box-shadow: 0 0 30px #00ccff; }
+      100% { box-shadow: 0 0 10px #00ccff; }
+    }
+
     .container {
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.5); /* Optional overlay */
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 0 20px #00ccff;
+      animation: pulse 2s infinite;
     }
 
     h2 {
