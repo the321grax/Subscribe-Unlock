@@ -1,51 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Subscribe to Unlock</title>
-  <style>
-    body {
-      background-image: url('https://drive.google.com/uc?export=view&id=19UhnhjlPoLIQpD3S-d7Bb8yWkH-prfWU');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      font-family: sans-serif;
-      color: white;
-      text-align: center;
-      padding: 50px;
-    }
-    h2 {
-      margin-bottom: 30px;
-      text-shadow: 0 0 10px #000;
-    }
-    #downloadBtn {
-      padding: 12px 24px;
-      font-size: 16px;
-      background-color: #00ccff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      display: none;
-      margin-top: 30px;
-      box-shadow: 0 0 10px #00ccff;
-    }
-  </style>
-</head>
 <body>
+  <img src="https://drive.google.com/uc?export=view&id=19UhnhjlPoLIQpD3S-d7Bb8yWkH-prfWU"
+       style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" />
 
   <h2>💖 Subscribe to unlock the download</h2>
 
   <!-- YouTube Subscribe Button -->
-<script src="https://apis.google.com/js/platform.js"></script>
-
-<div class="g-ytsubscribe"
-     data-channelid="UCIIPOzAODPQ2KTE7z1LhjSA"
-     data-layout="default"
-     data-theme="dark"
-     data-count="default">
-</div>
-
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <div class="g-ytsubscribe"
+       data-channelid="UCIIPOzAODPQ2KTE7z1LhjSA"
+       data-layout="default"
+       data-theme="dark"
+       data-count="default">
+  </div>
 
   <!-- Download Button -->
   <button id="downloadBtn" onclick="window.location.href='https://hyper-cryptical.itch.io/swirling-blue-pink-ultrawide-hi-res-looping-wallpaper'">
@@ -53,11 +19,8 @@
   </button>
 
   <script>
-    // Simulate unlock after a delay
     setTimeout(() => {
       document.getElementById("downloadBtn").style.display = "inline-block";
     }, 3000);
   </script>
-
 </body>
-</html>
